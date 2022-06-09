@@ -87,7 +87,7 @@ const userGuess = (letter) => {
             document.getElementById("keyboardRow3").innerHTML = 'Press Restart Game to play again!';
         }
         document.getElementById("wrongGuess").innerHTML = wrongGuesses;
-        document.getElementById("pic").src = "../public/animations (Light mode)/L"
+        document.getElementById("pic").src = "./images/animations (Light mode)/L"
             + wrongGuesses + ".gif";
     }
 }
@@ -97,7 +97,7 @@ const restart = () => {
     wrongGuesses = 0;
     document.getElementById("wrongGuess").innerHTML = wrongGuesses;
     guessedLetters = [];
-    document.getElementById("pic").src = "../public/animations (Light mode)/L0.png";
+    document.getElementById("pic").src = "./images/animations (Light mode)/L0.png";
     generateWord();
     createButtons();
     updateWordStatus();
