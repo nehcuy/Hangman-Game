@@ -1,6 +1,8 @@
 # Hangman Game
 
-This is a fully client sided Hangman Game project bootstrapped with [bootstrap-v5.0.2](https://getbootstrap.com/docs/5.0/getting-started/introduction/). Click [here](https://nehcuy.github.io/hangman-game/) to play the game on your local host!
+This is a fully client sided Hangman Game project bootstrapped with [bootstrap-v5.0.2](https://getbootstrap.com/docs/5.0/getting-started/introduction/).
+
+Click [here](https://nehcuy.github.io/hangman-game/) to play the game on your local host!
 
 Table of Contents:
 - [Introduction](#Introduction)
