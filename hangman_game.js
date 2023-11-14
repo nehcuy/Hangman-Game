@@ -57,6 +57,15 @@ const createButtons = () => {
     document.getElementById("keyboardRow3").innerHTML = thirdRowKeyboard;
 }
 
+// Event listener for keypress
+document.addEventListener("keypress", (event) => {
+    // Check if the pressed key is a letter
+    if (/^[a-zA-Z]$/.test(event.key)) {
+        // Convert the pressed key to uppercase and call userGuess function
+        document.getElementById(event.key.toUpperCase()).click();
+    }
+});
+
 // Updates the current word status.
 const updateWordStatus = () => {
     currWordStatus = masterWord.split("").map(char => 
@@ -103,6 +112,10 @@ const restart = () => {
     updateWordStatus();
 }
 
-generateWord();
-createButtons();
-updateWordStatus();
+// Ensure that the event listener is added after the document has loaded
+document.addEventListener("DOMContentLoaded", () => {
+    // Run your existing script here
+    generateWord();
+    createButtons();
+    updateWordStatus();
+});
